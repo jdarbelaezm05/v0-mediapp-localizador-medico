@@ -4,6 +4,7 @@ import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import { Navbar, MobileNav } from '@/components/layout'
 import { FilterPanel } from '@/components/map'
+import { PanicButton } from '@/components/emergency'
 import { Button } from '@/components/ui/button'
 import { Filter } from 'lucide-react'
 
@@ -48,6 +49,7 @@ export default function HomePage() {
         </main>
       </div>
 
+      <PanicButton />
       <MobileNav />
     </div>
   )
